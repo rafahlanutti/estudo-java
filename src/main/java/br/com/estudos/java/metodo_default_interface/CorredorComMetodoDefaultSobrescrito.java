@@ -10,6 +10,6 @@ public class CorredorComMetodoDefaultSobrescrito implements Corredor, Piloto {
          */
         Piloto.super.correrRapido();
 
-        // Podendo também comentar o metodo e fazer sua propria implementação
+        // Podendo também sobrescrever o metodo e fazer sua propria implementação
     }
 }
