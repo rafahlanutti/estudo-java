@@ -28,9 +28,9 @@ public class Main {
 
         listaParaEstudarStreams.stream()
                                .filter(numero -> numero % 2 == 0)
-                               .forEach(resultado -> System.out.println(resultado));
+                               .forEach(System.out::println);
     }
-
+ 
     @FunctionalInterface
     interface InterfaceComAnotacaoFuncionalInterface {
 

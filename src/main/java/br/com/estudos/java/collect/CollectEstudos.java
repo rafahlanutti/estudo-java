@@ -17,7 +17,7 @@ public class CollectEstudos {
          * fornecedor - acumulação - combinação
          */
         return numeros.stream()
-                      .collect(() -> new ArrayList<>(), (lista, elemento) -> lista.add(elemento),
+                      .collect(ArrayList::new, (lista, elemento) -> lista.add(elemento),
                               (l1, l2) -> l1.addAll(l2));
     }
 
@@ -42,7 +42,7 @@ public class CollectEstudos {
          * Retorna uma lista concatenada podendo ser separada por algum caractere
          */
         return numeros.stream()
-                      .map(elemento -> elemento.toString())
+                      .map(e -> e.toString())
                       .collect(Collectors.joining("."));
     }
 

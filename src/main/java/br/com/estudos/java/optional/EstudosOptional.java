@@ -16,7 +16,7 @@ public class EstudosOptional {
         }
 
     }
-
+  
     public Integer converterStringParaIntLancandoExessao(String numero) {
 
         var resultado = this.converterStringParaUmOptionalInteger(numero);
